@@ -1,7 +1,7 @@
 export default function HowItWorks() {
   return (
     <section className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-20">
+      <div className="max-w-7xl mx-auto px-6 py-14">
 
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto">

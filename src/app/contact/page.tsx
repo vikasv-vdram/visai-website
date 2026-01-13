@@ -45,10 +45,10 @@ export default function ContactPage() {
   </a>
 
   <a
-    href="mailto:support@visai.in"
+    href="mailto:support@visaipro.in"
     className="block hover:text-[#06923E] transition"
   >
-    📧 <span className="font-medium">Email:</span> support@visai.in
+    📧 <span className="font-medium">Email:</span> support@visaipro.in
   </a>
 
               <div className="hover:text-[#06923E] transition">

@@ -1,7 +1,7 @@
 export default function Services() {
   return (
     <section className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-20">
+      <div id="core-services" className="max-w-7xl mx-auto px-6 py-20">
 
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto">
@@ -48,9 +48,12 @@ export default function Services() {
             <p className="mt-3 text-gray-600 text-sm">
               Outsourced accounting, dedicated support, bookkeeping, payroll and MIS reporting.
             </p>
-            <p className="mt-4 text-sm text-blue-600 font-medium cursor-pointer">
-              Explore services →
-            </p>
+            <a
+  href="/services/accounting"
+  className="inline-block mt-4 text-sm text-blue-600 font-medium hover:underline hover:translate-x-1 transition-all"
+>
+  Explore services →
+</a>
           </div>
 
           {/* GST & IT Filings */}
@@ -64,9 +67,13 @@ export default function Services() {
             <p className="mt-3 text-gray-600 text-sm">
               GST returns, Income Tax filings, TDS returns, compliance management and notices support.
             </p>
-            <p className="mt-4 text-sm text-green-600 font-medium cursor-pointer">
-              Explore services →
-            </p>
+            <a
+  href="/services/gst-it-filings"
+  className="inline-block mt-4 text-sm text-green-600 font-medium hover:underline hover:translate-x-1 transition-all"
+>
+  Explore services →
+</a>
+
           </div>
 
           {/* Wealth */}

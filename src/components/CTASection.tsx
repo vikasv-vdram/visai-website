@@ -5,7 +5,7 @@ export default function CTASection() {
       {/* Soft background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#06923E]/10 via-white to-blue-50"></div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-24">
+      <div className="relative max-w-7xl mx-auto px-6 py-14">
 
         <div className="bg-white rounded-3xl border border-gray-100 shadow-xl p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-10">
 

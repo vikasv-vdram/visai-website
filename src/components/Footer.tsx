@@ -21,28 +21,46 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
-            <h4 className="text-lg font-semibold text-white mb-4">
-              Services
-            </h4>
-            <ul className="space-y-2 text-sm">
-  {[
-    "Business Registrations",
-    "Outsourced Accounting",
-    "GST & IT Filings",
-    "Compliance Management",
-    "Wealth & Financial Advisory",
-  ].map((item) => (
-    <li
-      key={item}
-      className="hover:text-[#5ad6a3] hover:translate-x-1 transition-all duration-200 cursor-pointer"
-    >
-      {item}
-    </li>
-  ))}
-</ul>
+<div>
+  <h3 className="font-semibold text-white mb-4">
+    Services
+  </h3>
 
-          </div>
+  <ul className="space-y-2 text-sm text-gray-300">
+
+    <li>
+      <a href="/services/registrations" className="hover:text-[#5ad6a3] transition">
+        Business Registrations
+      </a>
+    </li>
+
+    <li>
+      <a href="/services/accounting" className="hover:text-[#5ad6a3] transition">
+        Accounting & Bookkeeping
+      </a>
+    </li>
+
+    <li>
+      <a href="/services/gst-it-filings" className="hover:text-[#5ad6a3] transition">
+        GST & Income Tax Filings
+      </a>
+    </li>
+
+    <li>
+      <a href="/#" className="hover:text-[#5ad6a3] transition">
+        Wealth & Financial Advisory
+      </a>
+    </li>
+
+    <li>
+      <a href="/#" className="hover:text-[#5ad6a3] transition">
+        VISAI Media - News, Articles & Updates
+      </a>
+    </li>
+
+  </ul>
+</div>
+
 
           {/* Tools */}
           <div>
@@ -88,7 +106,7 @@ export default function Footer() {
   </li>
 
   <li className="hover:text-[#5ad6a3] transition cursor-pointer">
-    📧 support@visai.in
+    📧 support@visaipro.in
   </li>
 
   <li className="pt-2 text-[#5ad6a3] font-medium hover:translate-x-1 transition-all duration-200 cursor-pointer">

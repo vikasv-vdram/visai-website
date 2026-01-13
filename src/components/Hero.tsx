@@ -13,7 +13,6 @@ export default function Hero() {
   VISAI <span className="font-medium">Tax & Accounting Professionals</span>
 </p>
 
-
           <h1 className="mt-5 text-4xl md:text-5xl font-bold leading-tight text-gray-900">
             Run Your Business. <br />
             We Manage Your Taxes & Compliance.
@@ -23,7 +22,7 @@ export default function Hero() {
   Complete tax, accounting & compliance solutions for taxpayers.
 </p>
 
-          <p className="mt-3 text-gray-700 font-medium">
+          <p className="mt-6 inline-block bg-green-50 border border-green-100 text-green-700 text-sm px-4 py-2 rounded-full">
             GST • Income Tax • Accounting • Filings • Business Registrations
           </p>
 
@@ -37,7 +36,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/services"
+              href="#core-services"
               className="border border-gray-300 px-9 py-3 rounded-xl font-semibold text-gray-800 hover:border-[#06923E] hover:text-[#06923E] hover:bg-green-50 transition-all duration-300"
             >
               Explore Services
@@ -57,12 +56,14 @@ export default function Hero() {
         <div className="relative flex justify-center">
           <div className="bg-white rounded-3xl shadow-xl p-8 max-w-md w-full hover:shadow-2xl transition">
 
-            <div className="h-44 rounded-2xl bg-gradient-to-br from-green-100 via-white to-blue-100 mb-6 p-4 flex flex-col justify-between">
-  <div className="h-3 w-2/3 bg-white rounded"></div>
-  <div className="h-3 w-full bg-white rounded"></div>
-  <div className="h-3 w-5/6 bg-white rounded"></div>
-  <div className="h-3 w-3/4 bg-white rounded"></div>
+            <div className="mb-6 rounded-2xl overflow-hidden bg-gradient-to-br from-green-50 via-white to-blue-50">
+  <img
+    src="/illustrations/compliance-visual.svg"
+    alt="VISAI compliance and accounting services"
+    className="w-full h-56 object-contain p-4"
+  />
 </div>
+
 
             <h3 className="font-bold text-lg text-gray-900">
               Smart compliance. Clear systems. Reliable support.

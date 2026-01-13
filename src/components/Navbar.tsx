@@ -6,21 +6,40 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="bg-white sticky top-0 z-50 border-b border-gray-100">
+    <header className="bg-white sticky top-0 z-50 border-b border-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Brand */}
-        <div className="text-xl font-bold text-gray-900 cursor-pointer hover:text-[#06923E] transition">
-          VISAI
-        </div>
+<a href="/" className="flex items-center gap-2">
+  <img
+    src="/logo.svg"
+    alt="VISAI Tax & Accounting Professionals"
+    className="h-9 w-auto"
+  />
+
+  <span className="text-2xl font-bold text-gray-900 cursor-pointer hover:text-[#06923E] transition">
+    VISAI Pro 
+  </span>
+</a>
 
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center gap-8 font-medium text-gray-800">
 
           <div className="relative group">
-  <span  className="cursor-pointer hover:text-[#06923E] transition">
-    Registrations
-  </span>
+<button className="group flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-[#06923E] transition">
+  Registrations
+
+  <svg
+    className="w-4 h-4 text-gray-500 group-hover:text-[#06923E] transition"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</button>
+
 
   {/* Dropdown */}
   <div className="absolute left-0 top-full mt-4 w-[360px] bg-white rounded-2xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -39,49 +58,82 @@ export default function Navbar() {
 </div>
 
           <div className="relative group">
-  <span className="cursor-pointer hover:text-[#06923E] transition">
-    Accounting
-  </span>
+<button className="group flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-[#06923E] transition">
+  Accounting
+
+  <svg
+    className="w-4 h-4 text-gray-500 group-hover:text-[#06923E] transition"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</button>
 
   {/* Dropdown */}
   <div className="absolute left-0 top-full mt-4 w-[420px] bg-white rounded-2xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
     <div className="grid grid-cols-2 gap-4 p-5 text-sm text-gray-700">
 
-      <a href="#" className="hover:text-[#06923E]">Outsourced Accounting Services</a>
-      <a href="#" className="hover:text-[#06923E]">Dedicated Accounting Support</a>
-      <a href="#" className="hover:text-[#06923E]">Bookkeeping</a>
-      <a href="#" className="hover:text-[#06923E]">Accounting & Finalization</a>
-      <a href="#" className="hover:text-[#06923E]">Payroll Management</a>
-      <a href="#" className="hover:text-[#06923E]">MIS & Financial Reporting</a>
+      <a href="/services/accounting" className="hover:text-[#06923E]">Outsourced Accounting Services</a>
+      <a href="/services/accounting" className="hover:text-[#06923E]">Dedicated Accounting Support</a>
+      <a href="/services/accounting" className="hover:text-[#06923E]">Bookkeeping</a>
+      <a href="/services/accounting" className="hover:text-[#06923E]">Accounting & Finalization</a>
+      <a href="/services/accounting" className="hover:text-[#06923E]">Payroll Management</a>
+      <a href="/services/accounting" className="hover:text-[#06923E]">MIS & Financial Reporting</a>
 
     </div>
   </div>
 </div>
 
           <div className="relative group">
-  <span className="cursor-pointer hover:text-[#06923E] transition">
+
+<button className="group flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-[#06923E] transition">
     GST & IT Filings
-  </span>
+
+  <svg
+    className="w-4 h-4 text-gray-500 group-hover:text-[#06923E] transition"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</button>
+
 
   {/* Dropdown */}
   <div className="absolute left-0 top-full mt-4 w-[420px] bg-white rounded-2xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
     <div className="grid grid-cols-2 gap-4 p-5 text-sm text-gray-700">
 
-      <a href="#" className="hover:text-[#06923E]">GST Return Filing</a>
-      <a href="#" className="hover:text-[#06923E]">Income Tax Return Filing</a>
-      <a href="#" className="hover:text-[#06923E]">TDS Return Filing</a>
-      <a href="#" className="hover:text-[#06923E]">Compliance Management</a>
-      <a href="#" className="hover:text-[#06923E]">Notices, Scrutiny & Support</a>
-      <a href="#" className="hover:text-[#06923E]">ROC / MCA Filings</a>
+      <a href="/services/gst-it-filings#gst-services" className="hover:text-[#06923E]">GST Return Filing</a>
+      <a href="/services/gst-it-filings#it-services" className="hover:text-[#06923E]">Income Tax Return Filing</a>
+      <a href="/services/gst-it-filings#it-services" className="hover:text-[#06923E]">TDS Return Filing</a>
+      <a href="/services/gst-it-filings#it-detailed" className="hover:text-[#06923E]">Compliance Management</a>
+      <a href="/services/gst-it-filings#tax-notices" className="hover:text-[#06923E]">Notices, Scrutiny & Support</a>
+      <a href="/services/gst-it-filings#roc-mca" className="hover:text-[#06923E]">ROC / MCA Filings</a>
 
     </div>
   </div>
 </div>
 
           <div className="relative group">
-  <span className="cursor-pointer hover:text-[#06923E] transition">
-    Wealth
-  </span>
+<button className="group flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-[#06923E] transition">
+  Wealth
+
+  <svg
+    className="w-4 h-4 text-gray-500 group-hover:text-[#06923E] transition"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</button>
+
 
   {/* Dropdown */}
   <div className="absolute left-0 top-full mt-4 w-[380px] bg-white rounded-2xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -98,9 +150,19 @@ export default function Navbar() {
 </div>
 
           <div className="relative group">
-  <span className="cursor-pointer hover:text-[#06923E] transition">
-    Tools
-  </span>
+<button className="group flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-[#06923E] transition">
+  Tools
+
+  <svg
+    className="w-4 h-4 text-gray-500 group-hover:text-[#06923E] transition"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</button>
 
   {/* TOOLS MEGA MENU */}
   <div className="absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[1100px] bg-white rounded-3xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -188,9 +250,21 @@ export default function Navbar() {
 </div>
 
           <div className="relative group">
-  <span className="cursor-pointer hover:text-[#06923E] transition">
-    VISAI Media
-  </span>
+
+<button className="group flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-[#06923E] transition">
+  VISAI Media
+
+  <svg
+    className="w-4 h-4 text-gray-500 group-hover:text-[#06923E] transition"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</button>
+
 
   {/* Dropdown */}
   <div className="absolute left-0 top-full mt-4 w-[320px] bg-white rounded-2xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">

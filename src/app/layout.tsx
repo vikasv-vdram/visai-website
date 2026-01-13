@@ -9,6 +9,13 @@ const poppins = Poppins({
   display: "swap",
 });
 
+export const metadata = {
+  title: "VISAI Tax & Accounting Professionals",
+  description:
+    "VISAI provides professional GST, income tax, accounting, ROC, and business compliance services for Indian businesses and taxpayers.",
+};
+
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
